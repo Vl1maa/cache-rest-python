@@ -5,7 +5,6 @@
 1. **Crie um novo repositório no GitHub** para o seu projeto.
 2. **Clone o repositório** para a sua máquina local.
 3. **Instale as dependências** necessárias:
-
    ```bash
    pip install -r requirements.txt
    ```
@@ -50,8 +49,14 @@
 
 2. **Execute a aplicação** com o comando `python app.py` e teste o endpoint `/usuarios` com método `GET` para verificar o funcionamento do cache.
 
+<br/>
+
+Obs: note que colocamos um sleep na chamada ao banco de dados para representar o delay que seria precisar ir até o banco de dados para sempre resgatar a mesma informação.
+
 ### Contribuições
 
 João Leal = Cuidou da documentação e auxiliou na lógica do código.
+<br/>
 Gabriel Gimenez = Implementou a API REST com o cache.
+<br/>
 Vinicius Lima = Criou o repositório, auxiliou na implementação da API REST com cache e na documentação.
