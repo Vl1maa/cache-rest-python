@@ -53,6 +53,51 @@
 
 Obs: note que colocamos um sleep na chamada ao banco de dados para representar o delay que seria precisar ir até o banco de dados para sempre resgatar a mesma informação.
 
+<br/>
+
+**Exemplo de respostas:**
+```json
+    Sem cache
+    {
+        "dados": [
+            {
+                "e-mail": "lealjoao394@gmail.com",
+                "nome": "João Leal"
+            },
+            {
+                "e-mail": "gabriel2005gimenez@gmail.com",
+                "nome": "Gabriel Gimenez"
+            },
+            {
+                "e-mail": "vini.spec38@gmail.com",
+                "nome": "Vinicius Lima"
+            }
+        ],
+        "tempo_de_resposta": 2.001608371734619
+    }
+```
+
+```json
+    Com cache
+    {
+        "dados": [
+            {
+                "e-mail": "lealjoao394@gmail.com",
+                "nome": "João Leal"
+            },
+            {
+                "e-mail": "gabriel2005gimenez@gmail.com",
+                "nome": "Gabriel Gimenez"
+            },
+            {
+                "e-mail": "vini.spec38@gmail.com",
+                "nome": "Vinicius Lima"
+            }
+        ],
+        "tempo_de_resposta": 0.0
+    }
+```
+
 ### Contribuições
 
 João Leal = Cuidou da documentação e auxiliou na lógica do código.
